@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* LAYOUT */
 
 /* header */
@@ -65,6 +69,59 @@ button.btn-upgrade {
     margin-top: 1rem;
 }
 
-button.btn-upgrade:hover{
+button.btn-upgrade:hover {
     border: 2px solid white;
 }
+
+/* navigation bar */
+
+div.section-link > ul > li > a,
+h4#h4-playlist-white {
+    margin-left: 1.5rem;
+}
+
+img.logo-spotify {
+    height: 2.2rem;
+    margin: 1rem;
+}
+
+img.nav-icon {
+    height: 25px;
+    filter: invert(49%) sepia(6%) saturate(77%) hue-rotate(251deg) brightness(89%) contrast(90%);
+}
+
+div.navigation-bar {
+    background-color: black;
+}
+
+div.section-link > ul > li > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 11.5pt;
+}
+
+h4#h4-playlist-white {
+    color: white;
+    margin-top: 1rem;
+}
+
+div.playlist-container > ul > li > a {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: gray;
+    font-size: 11pt;
+    margin-left: 1.5rem;
+}
+
+div.playlist-container > ul > li {
+    margin-top: 1rem;
+}
+
+span#add-playlist {
+    margin-right: .5rem;
+    padding: .5rem;
+    background-color: gray;
+    color: black;
+}
+
+
