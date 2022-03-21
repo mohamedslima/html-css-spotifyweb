@@ -17,6 +17,7 @@ div.navigation-bar {
     float: left;
 }
 
+
 div.upgrade-bar {
     width: 100%;
     height: 80px;
@@ -26,7 +27,17 @@ div.upgrade-bar {
 /* main */
 
 div.list-music {
-    height: 600px;
-    width: 75%;
+    height: calc(100vh - 190px);
+    width: 85%;
     background-color: saddlebrown;
+    margin-left: 15%;
 }
+
+/* footer */
+
+div.player-bar {
+    width: 100%;
+    height: 110px;
+    background-color: deepskyblue;
+}
+
