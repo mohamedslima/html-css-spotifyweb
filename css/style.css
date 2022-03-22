@@ -6,122 +6,84 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: 'Montserrat', sans-serif;
+}
+
+/* COMMON */
+
+div.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    /* TEST */
+    background-color: aqua;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* LAYOUT */
 
-/* header */
-
-div.navigation-bar {
-    width: 15%;
-    height: calc(100vh - 110px);
-    background-color: blue;
-    float: left;
-}
-
-
-div.upgrade-bar {
-    width: 100%;
-    height: 80px;
-}
-
 /* main */
 
-div.list-music {
-    height: calc(100vh - 190px);
-    width: 85%;
-    background-color: saddlebrown;
-    margin-left: 15%;
+main {
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: hidden;
+
+    /* TEST */
+    background-color: wheat;
+}
+
+div.side-bar {
+    width: 240px;
+    height: 100%;
+    float: left;
+
+    /* TEST */
+    background-color: thistle;
+}
+
+div.content-music {
+    width: calc(100% - 240px);
+    height: 100%;
+    float: left;
+    overflow-y: auto;
+    padding: 120px 20px 20px;
+
+    /* TEST */
+    background-color: dodgerblue;
+}
+
+div.content-cta {
+    width: calc(100% - 240px);
+    height: 100px;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+div.sidebar-top{
+    height: calc(100% - 80px);
+    
+}
+
+div.sidebar-bottom {
+    height: 80px;
 }
 
 /* footer */
 
-div.player-bar {
+footer {
     width: 100%;
-    height: 110px;
-    background-color: deepskyblue;
+    height: 100px;
+
+    /* TEST */
+    background-color: mediumaquamarine ;
 }
-
-/* CONTENT */
-
-/* header */
-
-/* upgrade bar */
-
-div.upgrade-bar {
-    background-color: #090b12;
-}
-
-button.btn-upgrade a {
-    text-decoration: none;
-    color: white;
-    padding: 2rem;
-}
-
-button.btn-upgrade {
-    border-radius: 50px;
-    background-color: black;
-    border: 1px solid white;
-    padding: 0.9rem;
-    float: right;
-    margin-top: 1rem;
-}
-
-button.btn-upgrade:hover {
-    border: 2px solid white;
-}
-
-/* navigation bar */
-
-div.section-link > ul > li > a,
-h4#h4-playlist-white {
-    margin-left: 1.5rem;
-}
-
-img.logo-spotify {
-    height: 2.2rem;
-    margin: 1rem;
-}
-
-img.nav-icon {
-    height: 25px;
-    filter: invert(49%) sepia(6%) saturate(77%) hue-rotate(251deg) brightness(89%) contrast(90%);
-}
-
-div.navigation-bar {
-    background-color: black;
-}
-
-div.section-link > ul > li > a {
-    text-decoration: none;
-    color: gray;
-    font-size: 11.5pt;
-}
-
-h4#h4-playlist-white {
-    color: white;
-    margin-top: 1rem;
-}
-
-div.playlist-container > ul > li > a {
-    margin-top: 1rem;
-    text-decoration: none;
-    color: gray;
-    font-size: 11pt;
-    margin-left: 1.5rem;
-}
-
-div.playlist-container > ul > li {
-    margin-top: 1rem;
-}
-
-span#add-playlist {
-    margin-right: .5rem;
-    padding: .5rem;
-    background-color: gray;
-    color: black;
-}
-
-
