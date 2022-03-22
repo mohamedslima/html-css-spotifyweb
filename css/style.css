@@ -71,11 +71,38 @@ div.content-cta {
 
 div.sidebar-top{
     height: calc(100% - 80px);
-    
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+
+    /* TEST */
+    background-color: coral;
 }
 
 div.sidebar-bottom {
     height: 80px;
+
+    /* TEST */
+    background-color: rosybrown;
+}
+
+div.logo {
+    background-color: limegreen;
+}
+
+div.menu {
+    background-color: lightcoral;
+}
+
+div.playlist {
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: lightpink;
+}
+
+div.playlist ul {
+    overflow-y: auto;
+    height: 80%;
 }
 
 /* footer */
