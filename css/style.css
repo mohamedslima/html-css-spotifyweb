@@ -74,9 +74,10 @@ div.sidebar-top{
     min-height: 350px;
     display: flex;
     flex-direction: column;
+    padding: 1rem ;
 
     /* TEST */
-    background-color: coral;
+    background-color: black;
 }
 
 div.sidebar-bottom {
@@ -86,18 +87,9 @@ div.sidebar-bottom {
     background-color: rosybrown;
 }
 
-div.logo {
-    background-color: limegreen;
-}
-
-div.menu {
-    background-color: lightcoral;
-}
-
 div.playlist {
     overflow: hidden;
     flex-grow: 1;
-    background-color: lightpink;
 }
 
 div.playlist ul {
@@ -113,4 +105,84 @@ footer {
 
     /* TEST */
     background-color: mediumaquamarine ;
+}
+
+/* CONTENT */
+
+/* MAIN CONTENT CTA */
+
+button.btn-upgrade a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+}
+
+button.btn-upgrade {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid white;
+    padding: 1rem;
+    float: right;
+    margin: 1rem;
+}
+
+button.btn-upgrade:hover {
+    border: 2px solid white;
+}
+
+/* MAIN CONTENT SIDE-BAR */
+
+img.logo-spotify {
+    height: 60%;
+}
+
+img.nav-icon {
+    height: 25px;
+    filter: invert(49%) sepia(6%) saturate(77%) hue-rotate(251deg) brightness(89%) contrast(90%);
+}
+
+div.menu > ul > li > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 11.5pt;
+    align-items: center;
+    display: flex;
+}
+
+div.menu > ul > li > a > span {
+    padding-left: .5rem;
+}
+
+h4.title-playlist {
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+a.subtitle-playlist {
+    text-decoration: none;
+    color: gray;
+}
+
+span#add-playlist {
+    color: black;
+    background-color: gray;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+
+div.playlist ul li a {
+    text-decoration: none;
+    color: gray;
+    line-height: 2rem;
+}
+
+span.install-link {
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+span.text-install {
+   margin-left: .5rem;
 }
