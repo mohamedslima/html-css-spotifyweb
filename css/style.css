@@ -16,9 +16,6 @@ div.container {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-
-    /* TEST */
-    background-color: aqua;
 }
 
 .clearfix::after {
@@ -35,9 +32,7 @@ main {
     width: 100%;
     height: calc(100% - 100px);
     overflow: hidden;
-
-    /* TEST */
-    background-color: wheat;
+    background-color: #141922;
 }
 
 div.side-bar {
@@ -53,9 +48,6 @@ div.content-music {
     float: left;
     overflow-y: auto;
     padding: 120px 20px 20px;
-
-    /* TEST */
-    background-color: dodgerblue;
 }
 
 div.content-cta {
@@ -234,24 +226,44 @@ div.navigation-music ul li {
 div.recent-music {
     width: 100%;
     margin-top: 1rem;
-    background-color: darkseagreen;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+h2.title-music {
+    color: white;
+    margin-top: 1rem;
 }
 
 div.music-content-ct {
     width: calc(100% / 7);
-    max-width: 320px;
-    background-color: navajowhite;
-    display: flex;
 }
 
 img.icon-music-snd {
     width: 100%;
-    height: 70%;
-    /* position: absolute; */
 }
 
+h5.title-icon-music {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding-top: .4rem;
+}
 
+div.subtitle-icon-music {
+    font-size: .8rem;
+    color: gray;
+    text-align: center;
+    padding-top: .2rem;
+}
 
+/* created for user */
+
+h2.title-music {
+    margin-top: 2.5rem;
+}
+
+span.subtitle-music {
+    color: gray;
+    margin-top: 1rem;
+}
