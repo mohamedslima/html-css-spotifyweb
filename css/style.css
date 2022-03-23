@@ -93,6 +93,17 @@ footer {
     background-color: mediumaquamarine ;
 }
 
+div.play-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.player-bar {
+    width: calc(95% / 3);
+    height: 100px;
+    background-color: aqua;
+}
+
 /* CONTENT */
 
 /* MAIN CONTENT CTA */
@@ -292,3 +303,4 @@ img.icon-music-snd-bt {
     border-radius: 100px;
     width: 100%;
 }
+
