@@ -227,16 +227,12 @@ div.recent-music {
     width: 100%;
     margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 h2.title-music {
     color: white;
     margin-top: 1rem;
-}
-
-div.music-content-ct {
-    width: calc(100% / 7);
 }
 
 img.icon-music-snd {
@@ -260,10 +256,39 @@ div.subtitle-icon-music {
 /* created for user */
 
 h2.title-music {
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 span.subtitle-music {
     color: gray;
+}
+
+div.created-for-user {
+    width: 100%;
     margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+div.music-content-ct,
+div.created-for-user-ct,
+div.most-popular-artist-ct {
+    width: calc(100% / 7);
+}
+
+/* most popular artist */
+
+div.most-popular-artist{
+    display: flex;
+    gap: 2rem;
+}
+
+div.most-popular-artist-ct {
+    padding-top: 1.5rem;
+}
+
+img.icon-music-snd-bt {
+    border-radius: 100px;
+    width: 100%;
 }
