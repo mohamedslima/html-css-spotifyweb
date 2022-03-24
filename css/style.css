@@ -398,12 +398,19 @@ div.circle-volume {
     border-radius: 50px;
     width: 15px;
     height: 15px;
-    border: .5px solid black;
     background-color: white;
+    border: .5px solid black;
     display: none;
 }
 
-div.circle-volume:hover {
-    display: block;
+div.volume-bar-ft:hover .volume-ef {
+    background-color: green;
 }
 
+div.volume-bar-ft {
+    margin-left: 1rem;
+}
+
+div.volume-bar-ft:hover .circle-volume {
+    display: block;
+}
